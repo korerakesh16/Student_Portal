@@ -19,5 +19,5 @@ public class LoginServlet extends HttpServlet {
         } else {
             resp.getWriter().println("Invalid email or password.");
         }
-    }
+    }  
 }
