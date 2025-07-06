@@ -7,6 +7,7 @@ import org.mindrot.jbcrypt.BCrypt;
 
 public class UserDAO {
 
+    
     public boolean registerUser(User user) {
         String sql = "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)";
         try (Connection conn = DBUtil.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
