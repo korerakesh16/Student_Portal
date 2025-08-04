@@ -8,6 +8,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
+        
 
         User user = new UserDAO().loginUser(email, password);
         if (user != null) {
