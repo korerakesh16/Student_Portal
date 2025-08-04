@@ -4,7 +4,6 @@ import com.portal.model.User;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
-
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String email = req.getParameter("email");
