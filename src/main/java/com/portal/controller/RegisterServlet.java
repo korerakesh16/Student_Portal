@@ -6,6 +6,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
 
+
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User();
