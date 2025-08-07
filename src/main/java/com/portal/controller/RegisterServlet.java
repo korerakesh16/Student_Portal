@@ -14,7 +14,6 @@ public class RegisterServlet extends HttpServlet {
         user.setPassword(req.getParameter("password"));
         user.setRole(req.getParameter("role"));
 
-
         
         if (new UserDAO().registerUser(user)) {
             resp.sendRedirect("jsp/login.jsp");
